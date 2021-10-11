@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout för CreateEditTimeLog.java-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CreateEditWorkplaceActivity">
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Create"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/labelStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:labelFor="@id/startTime"
+        android:text="Start time"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:background="@android:color/white"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/pickStart"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center|center_vertical"
+            android:text="Pick"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:labelFor="@id/endTime"
+        android:text="End time"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:background="@android:color/white"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/pickEnd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center|center_vertical"
+            android:text="Pick"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:labelFor="@id/comment"
+        android:text="Comment"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:gravity="top|left"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textSize="22sp" />
+</LinearLayout>
